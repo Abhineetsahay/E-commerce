@@ -6,7 +6,7 @@ export const postLoginData = createAsyncThunk(
   'api/v1/login',
   async (data, { rejectWithValue }) => {
     try {
-      const response = await axios.post(`${process.env.URL}/login`, data);
+      const response = await axios.post('http://localhost:4000/api/v1/login', data);
       // console.log(response.data);  // Log response data for debugging
       const result=response.data;
       const {token}=result;

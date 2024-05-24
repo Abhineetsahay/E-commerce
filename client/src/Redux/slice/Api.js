@@ -6,7 +6,7 @@ export const postSigninData = createAsyncThunk(
   'api/v1/postSigninData',
   async (data, { rejectWithValue }) => {
     try {
-      const response = await axios.post(`${process.env.URL}/Signin`, data);
+      const response = await axios.post('http://localhost:4000/api/v1//Signin', data);
       const { token } = response.data;
       localStorage.setItem("token", token);
       return response.data;
