@@ -1,0 +1,117 @@
+.cart-items{
+          max-width: 50%;
+          width: 50%;
+          height: 500px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          margin: 20px;
+          padding: 10px;
+          outline-style: solid;
+          border-radius: 10px;
+          outline-color: rgba(5, 18, 19, 0.795);
+}
+.cart-about{
+          max-width: 100%;
+          width: 100%;
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          flex-wrap: wrap;
+          margin-left: 1rem;
+}
+.cart-title{
+          margin-bottom: 0;
+          color: rgb(55 65 81);
+          font-weight: 600;
+          font-size: 1.125rem;
+          text-align: left;
+}
+.cart-image{
+          width: 100%;
+          max-width: 180px;
+}
+.cart-description{
+          text-align: left;
+}
+.cart-price{
+          color: #16A34A;
+          font-weight: 600;
+}
+.cart-remove{
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-items: center;
+}
+.Quantity-buttons{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;  
+          gap: 15px;
+          margin-bottom: 10px;
+}
+.Quantity{
+          margin: 0;
+}
+.button{
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          height: 30px;
+          width: 30px;
+          padding: 10px;
+          border-radius: 100%;
+          font-size: 1.25rem;
+          font-weight: 400px;
+}
+.button:hover{
+          background-color: rgb(222, 219, 219);
+}
+.cart-remove-button{
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-items: center;        
+          border-radius: 9999px;
+          padding: 0.25rem 0.75rem;
+          color: rgb(55 65 81);
+          border-color: rgb(55 65 81);
+          font-weight: 600;
+          transition: all ease-in 300ms;
+}
+.cart-remove-button:hover{
+          background-color: rgb(55 65 81);
+          color: rgb(255 255 255);
+}
+.loader1 {
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+          position: relative;
+          animation: rotate 1s linear infinite
+        }
+.loader1::before {
+          content: "";
+          box-sizing: border-box;
+          position: absolute;
+          inset: 0px;
+          border-radius: 50%;
+          border: 5px solid #700a0a;
+          animation: prixClipFix 2s linear infinite ;
+}    
+@keyframes rotate {
+          100%   {transform: rotate(360deg)}
+}
+@keyframes prixClipFix {
+            0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+            25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+            50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+            75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
+            100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
+}

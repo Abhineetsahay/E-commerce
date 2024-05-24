@@ -1,0 +1,76 @@
+.cart{
+          height: 100%;
+          padding: 1.25rem;
+}
+.length0{
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+}
+.length0-heading{
+          margin-bottom: 10px;
+}
+.shop{
+          text-decoration: none;
+          font-size: 20px;
+          color: rgb(48, 38, 38);
+}
+.totalamountandorder{
+          width: 100%;
+          margin-top: 1.5rem;
+          /* margin-bottom: 1.75rem; */
+          display: flex;
+          align-items: center;
+          justify-content: center;
+}
+.totalamount-order{
+          width: max-content;
+          border:2px solid black;
+          padding: 10px;
+          border-radius: 10px;
+          flex-direction: column;
+          row-gap: 8px;
+}
+.totalamount{
+          margin: 0;
+}
+.order-button{
+          border-radius: 12px;
+          border-color: rgb(84 125 95);
+          padding: 4px;
+}
+.loading{
+          height: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+}
+.loader1 {
+          display: block;
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+          position: relative;
+          animation: rotate 1s linear infinite
+        }
+.loader1::before {
+          content: "";
+          box-sizing: border-box;
+          position: absolute;
+          inset: 0px;
+          border-radius: 50%;
+          border: 5px solid #700a0a;
+          animation: prixClipFix 2s linear infinite ;
+}    
+@keyframes rotate {
+          100%   {transform: rotate(360deg)}
+}
+@keyframes prixClipFix {
+            0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+            25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+            50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+            75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
+            100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
+}
