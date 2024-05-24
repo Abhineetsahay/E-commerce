@@ -21,6 +21,34 @@ This repository contains an E-commerce website project showcasing various functi
 ## Technologies Used
 - **Frontend**: React.js, Redux, React Router, Axios, React-Toastify
 - **Backend**: Node.js, Express.js, MongoDB, Mongoose, JWT
+## Known Issues
+
+### Issue 1: Inconsistent Behavior with "Add to Cart" Button
+
+- **Description**: After adding an item to the cart, the "Add to Cart" button changes to "Go to Cart." However, after refreshing the page, the button reverts to its original state.
+- **Status**: Investigating.
+- **Workaround**: Manually navigate to the cart page after adding items.
+
+### Issue 2: Quantity Increase Error
+
+- **Description**: Increasing the quantity of an item in the cart sometimes results in errors or inconsistent behavior.
+- **Status**: Investigating.
+- **Workaround**: Avoid modifying item quantities until the issue is resolved.
+
+### Issue 3: Lack of Database for Total Amount
+
+- **Description**: Currently, there is no database integration to store the total amount of the cart.
+- **Status**: Planning for implementation.
+- **Solution**: Integrate a database to store and manage the total amount of the cart.
+
+### Future Feature Suggestions
+
+- **Product Description Page**: Consider adding a detailed product description page for each item.
+- **Additional Signup Methods**: Explore adding alternative signup methods such as signup with Google or social media accounts.
+
+### Other Known Issues
+
+- *Insert description of other known issues here.*
 
 ## Getting Started
 1. Clone the repository: `git clone <repository-url>`
